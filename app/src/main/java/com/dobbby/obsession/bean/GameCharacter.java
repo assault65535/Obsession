@@ -1,0 +1,39 @@
+package com.dobbby.obsession.bean;
+
+/**
+ * Created by Dobbby on 16/7/5.
+ */
+public class GameCharacter {
+    public static final int UP = 0;
+    public static final int DOWN = 1;
+    /**
+     * position receive para: UP or DOWN.
+     */
+    private int position;
+    private int x;
+    private int y;
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+}

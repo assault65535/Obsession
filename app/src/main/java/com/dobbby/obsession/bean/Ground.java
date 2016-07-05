@@ -10,7 +10,8 @@ public class Ground {
         return length;
     }
 
-    public void setLength(int length) {
+    public Ground setLength(int length) {
         this.length = length;
+        return this;
     }
 }

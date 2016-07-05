@@ -17,23 +17,26 @@ public class GameCharacter {
         return position;
     }
 
-    public void setPosition(int position) {
+    public GameCharacter setPosition(int position) {
         this.position = position;
+        return this;
     }
 
     public int getX() {
         return x;
     }
 
-    public void setX(int x) {
+    public GameCharacter setX(int x) {
         this.x = x;
+        return this;
     }
 
     public int getY() {
         return y;
     }
 
-    public void setY(int y) {
+    public GameCharacter setY(int y) {
         this.y = y;
+        return this;
     }
 }

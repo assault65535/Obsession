@@ -12,8 +12,10 @@ public class TrapGenerator implements ITrapGenerator {
     public Trap generateTrap() {
         Random random = new Random();
         final int width = 20;
+        final int height = 20;
         return new Trap()
                 .setWidth(width)
+                .setHeight(height)
                 .setDistance(random.nextInt(width) + width)
                 .setShape(random.nextInt(2))
                 .setTriangleDirection(random.nextInt(2));

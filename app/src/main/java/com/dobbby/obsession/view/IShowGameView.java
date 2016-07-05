@@ -8,7 +8,9 @@ import com.dobbby.obsession.bean.GameCharacter;
 public interface IShowGameView {
     void showGameOver();
 
-    void showJumpingAnimation(GameCharacter gameCharacter);
+    void showJumping(GameCharacter gameCharacter);
 
-    void showRunningAnimation();
+    void showRunning();
+
+    void showBackgroundMoving();
 }

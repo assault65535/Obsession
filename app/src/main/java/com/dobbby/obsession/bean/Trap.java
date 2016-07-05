@@ -21,6 +21,10 @@ public class Trap {
      */
     private int width;
     /**
+     * height of the trap.
+     */
+    private int height;
+    /**
      * distance from the former trap.
      */
     private int distance;
@@ -31,6 +35,15 @@ public class Trap {
 
     public Trap setWidth(int width) {
         this.width = width;
+        return this;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public Trap setHeight(int height) {
+        this.height = height;
         return this;
     }
 

@@ -11,11 +11,11 @@ public class TrapGenerator implements ITrapGenerator {
     @Override
     public Trap generateTrap() {
         Random random = new Random();
-        int width = 20;
+        final int width = 20;
         return new Trap()
                 .setWidth(width)
                 .setDistance(random.nextInt(width) + width)
-                .setShape(random.nextInt(1))
-                .setTriangleDirection(random.nextInt(1));
+                .setShape(random.nextInt(2))
+                .setTriangleDirection(random.nextInt(2));
     }
 }

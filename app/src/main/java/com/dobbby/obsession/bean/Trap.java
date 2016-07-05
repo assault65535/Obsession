@@ -29,8 +29,9 @@ public class Trap {
         return width;
     }
 
-    public void setWidth(int width) {
+    public Trap setWidth(int width) {
         this.width = width;
+        return this;
     }
 
     public int getShape() {

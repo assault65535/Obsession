@@ -11,7 +11,52 @@
         tools:context=".activity.MainActivity">
 
     <TextView
-            android:text="Hello World!"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/jumpHero_tv"
+            android:layout_above="@+id/hero_tv" android:layout_centerHorizontal="true"
+    />
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hero_normal"
+            android:id="@+id/hero_tv"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/hero_tv"
+            android:layout_centerHorizontal="true">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plain_ground"
+                android:id="@+id/tv1"/>
+        <TextView
+                android:layout_marginStart="@dimen/ground_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plain_ground"
+                android:id="@+id/tv2"/>
+        <TextView
+                android:layout_marginStart="@dimen/ground_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plain_ground"
+                android:id="@+id/tv3"/>
+        <TextView
+                android:layout_marginStart="@dimen/ground_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plain_ground"
+                android:id="@+id/tv4"/>
+        <TextView
+                android:layout_marginStart="@dimen/ground_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plain_ground"
+                android:id="@+id/tv5"/>
+    </LinearLayout>
+
 </RelativeLayout>

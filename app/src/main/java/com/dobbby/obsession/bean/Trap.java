@@ -6,10 +6,12 @@ package com.dobbby.obsession.bean;
 public class Trap {
     public static final int RECTANGLE = 0;
     public static final int TRIANGLE = 1;
+    public static final int PLAIN = 2;
     public static final int LEFT_TRIANGLE = 0;
     public static final int RIGHT_TRIANGLE = 1;
     /**
      * shape receive para: RECTANGLE or TRIANGLE.
+     * also PLAIN.
      */
     private int shape;
     /**
@@ -72,5 +74,27 @@ public class Trap {
     public Trap setDistance(int distance) {
         this.distance = distance;
         return this;
+    }
+
+    @Override
+    public String toString() {
+
+        String ans;
+
+        switch (this.shape) {
+            case Trap.TRIANGLE:
+                ans = this.triangleDirection == Trap.LEFT_TRIANGLE ? "LTri" : "Rtri";
+                break;
+            case Trap.RECTANGLE:
+                ans = "Rect";
+                break;
+            case Trap.PLAIN:
+                ans = "Plain";
+                break;
+            default:
+                throw new IllegalStateException();
+        }
+
+        return ans;
     }
 }

@@ -2,10 +2,7 @@ package com.dobbby.obsession.presenter;
 
 import android.os.Handler;
 import com.dobbby.obsession.bean.GameCharacter;
-import com.dobbby.obsession.model.IReceiveClick;
-import com.dobbby.obsession.model.ITrapGenerator;
-import com.dobbby.obsession.model.OnUserClickListener;
-import com.dobbby.obsession.model.ReceiveClick;
+import com.dobbby.obsession.model.*;
 import com.dobbby.obsession.view.IShowGameView;
 
 /**
@@ -21,10 +18,21 @@ public class GamePresenter {
     public GamePresenter(IShowGameView showGameView) {
         this.showGameView = showGameView;
         this.receiveClick = new ReceiveClick();
+        this.trapGenerator = new TrapGenerator();
     }
 
-    public void sample() {
-        receiveClick.judgeClick(1, new OnUserClickListener() {
+
+    public void GameStart() {
+
+    }
+
+    public void moveForward() {
+
+    }
+
+    public void judge(final int clickPos) {
+
+        receiveClick.judgeClick(clickPos, new OnUserClickListener() {
             @Override
             public void wrongClick() {
                 handler.post(new Runnable() {
@@ -46,5 +54,6 @@ public class GamePresenter {
                 });
             }
         });
+
     }
 }

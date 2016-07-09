@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Obsession</string>
+
+
+    <!--TextView 的预设, 以后肯定要删..-->
+    <string name="hero_normal">Our hero</string>
+    <string name="hero_jump">Our hero is jumping!</string>
+    <string name="hero_dead">Our hero is dead!</string>
+    <string name="plain_ground">Plain</string>
+    <string name="rectangle_trap">Rect</string>
+    <string name="left_triangle_trap">LTri</string>
+    <string name="right_triangle_trap">RTri</string>
+
 </resources>

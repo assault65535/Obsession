@@ -72,7 +72,7 @@ public class GamePresenter extends Handler {
         /**
          * Things that the new thread which is about to start should do:
          *  1. judge if the move right
-         *  2. if true, forward() and sleep 300ms then go to 1.
+         *  2. if true, forward() and sleep 200ms then go to 1.
          *  3. if false, showGameOver() and end this thread.
          * */
 
